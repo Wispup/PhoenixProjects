@@ -3,7 +3,6 @@ body{
     background-color: gold;
     opacity: 50%;
     position: relative;
-    z-index: 0;
 }
 
 h1 {
@@ -18,7 +17,7 @@ h1 {
     border: 2px solid black;
     margin: 0px auto;
     border-bottom: 2px solid gold;
-    z-index: 1;
+    z-index: 2;
     
 }
 
@@ -44,7 +43,7 @@ h1 {
     width: 100%;
     top: 0;
     overflow: hidden;
-    z-index: 2;
+    z-index: 3;
 }
 
 #navigation li {
