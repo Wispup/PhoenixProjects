@@ -2,6 +2,7 @@ body{
     margin-top: 100px;
     background-color: gold;
     opacity: 50%;
+    z-index: 0;
 }
 
 h1 {
