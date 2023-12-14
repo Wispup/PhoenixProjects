@@ -1,11 +1,13 @@
 body{
     margin-top: 100px;
+    background-color: gold;
+    opacity: 50%;
 }
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif ;
     font-size: 100px;
-    opacity: 50%;
+    text-decoration: underline;
     color: black;
     text-align: center;
     background: brown;
@@ -13,6 +15,7 @@ h1 {
     padding: 20px;
     border: 2px solid black;
     margin: 0px auto;
+    border-bottom: 2px solid gold;
     
 }
 
