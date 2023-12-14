@@ -2,7 +2,7 @@ body{
     margin-top: 100px;
     background-color: gold;
     opacity: 50%;
-    z-index: 0;
+    position: relative;
 }
 
 h1 {
@@ -63,5 +63,10 @@ h1 {
     background-color: gold;
     box-shadow: 5px 2px;
     border-radius: 20%;
+
+}
+
+#navigation li a:active {
+    color: brown;
 
 }
