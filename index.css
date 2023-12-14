@@ -33,7 +33,7 @@ p {
 }
 
 #Blog_content{
-    overflow: hidden;
+    overflow: scroll;
     height: 200px;
 }
 
