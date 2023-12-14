@@ -2,12 +2,12 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100Px;
     opacity: 50%;
-    color: blueviolet;
+    color: black;
     text-align: center;
-    background: gray;
+    background: brown;
     background-size: cover;
     padding: 20px;
-    border: 2px solid blueviolet;
+    border: 2px solid black;
     border-radius: 20%;
     margin: 0 auto;
 }
@@ -18,23 +18,35 @@ h1 {
     margin: 0 auto;
 }
 
-nav {
-    display: inline-block;
-}
 
 #navigation {
-    display: inline-block;
+    list-style-type: none;
     color: aliceblue;
     background-color: blueviolet;
     padding: 30px;
     transition: background-color 0.3s ease;
     border: 2px solid black;
     border-radius: 20%;
-
-
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
 }
 
-#navigation:hover {
+#navigation li {
+    float: left;
+}
+
+#navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navigation li a:hover {
     color: black;
     background-color: aliceblue;
     box-shadow: 5px 2px;
