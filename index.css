@@ -18,6 +18,15 @@ h1 {
     
 }
 
+h2 {
+    text-align: center;
+
+}
+
+h3 {
+    text-align: center;
+}
+
 #image_1 {
     width: 800px;
     height: 500px;
