@@ -32,6 +32,15 @@ p {
     text-align: center;
 }
 
+#Blog_content{
+    overflow: hidden;
+    height: 200px;
+}
+
+#Links_list {
+    text-align: center;
+}
+
 #image_1 {
     width: 800px;
     height: 500px;
