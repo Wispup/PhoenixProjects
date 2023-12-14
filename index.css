@@ -31,9 +31,16 @@ p {
     text-align: center;
 }
 
-#Blog_content{
-    overflow: scroll;
-    height: 200px;
+#Blog_content {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 500px;
+}
+
+#Projects {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 500px;
 }
 
 #Links_list {
@@ -49,6 +56,25 @@ p {
     z-index: 1;
     border-radius: 50%;
     
+}
+
+#ButtonAD {
+    position: absolute;
+    top: 50%; /* Adjust this value to vertically position the button */
+    left: 50%; /* Adjust this value to horizontally position the button */
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50; /* Add a background color for better visibility */
+    color: white; /* Set text color */
+    padding: 10px 20px; /* Add padding for better appearance */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    cursor: pointer;
+}
+
+#subtitle{
+    color: #E0CD67 ;
+    border: black;
+
 }
 
 
