@@ -18,6 +18,10 @@ h1 {
     align-items: center;
 }
 
+nav {
+    display: inline-block;
+}
+
 #navigation {
     display: inline-block;
     color: aliceblue;
