@@ -37,8 +37,17 @@
                 var audio = document.getElementById('audio');
                 audio.play();
             }, 1000); // 1000 milliseconds (1 second) delay
-        </script>
 
+            function minimizeAudio() {
+                var audio = document.getElementById('audio');
+                audio.controls = false;
+            }
+
+            function centerAudio() {
+                var audio = document.getElementById('audio');
+                audio.controls = true;
+            }
+        </script>
 
     </section>
     <section>
