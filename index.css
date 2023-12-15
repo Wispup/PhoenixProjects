@@ -63,8 +63,8 @@ p {
     top: 50%; /* Adjust this value to vertically position the button */
     left: 50%; /* Adjust this value to horizontally position the button */
     transform: translate(-50%, -50%);
-    background-color: #4CAF50; /* Add a background color for better visibility */
-    color: white; /* Set text color */
+    background-color: brown; /* Add a background color for better visibility */
+    color: goldenrod; /* Set text color */
     padding: 10px 20px; /* Add padding for better appearance */
     border: none; /* Remove border */
     border-radius: 5px; /* Add border-radius for rounded corners */
@@ -75,6 +75,11 @@ p {
     color: #E0CD67 ;
     border: black;
 
+}
+
+#audio{
+    align-items: center;
+    color: brown;
 }
 
 
