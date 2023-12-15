@@ -30,6 +30,16 @@
             <source src="../Sounds/Project_1PPS.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
+        
+        <script>
+            // Autoplay the audio when the page loads
+            window.addEventListener('load', function () {
+                var audio = document.getElementById('audio');
+                audio.play();
+            });
+        </script>
+
+        
     </section>
     <section>
         <header id="Blog">
