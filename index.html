@@ -32,14 +32,14 @@
         </audio>
         
         <script>
-            // Autoplay the audio when the page loads
-            window.addEventListener('load', function () {
+            // Delay the audio play to ensure it starts after page load
+            setTimeout(function() {
                 var audio = document.getElementById('audio');
                 audio.play();
-            });
+            }, 1000); // 1000 milliseconds (1 second) delay
         </script>
 
-        
+
     </section>
     <section>
         <header id="Blog">
