@@ -78,7 +78,8 @@ p {
 }
 
 #audio{
-    align-items: center;
+    display: block;
+    margin: auto;
     color: brown;
 }
 
@@ -113,8 +114,8 @@ p {
 #navigation li a:hover {
     color: black;
     background-color: gold;
-    box-shadow: 5px 2px;
-    border-radius: 20%;
+    box-shadow: 0 17px 50px 0 rgba(0,0,0,0.19);
+    border-radius: 25%;
 
 }
 
