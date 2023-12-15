@@ -15,6 +15,7 @@ h1 {
     border: 2px solid black;
     margin: 0px auto;
     z-index: 2;
+    border-radius: 5px;
     
 }
 
@@ -80,6 +81,7 @@ p {
 #audio{
     display: block;
     color: brown;
+    width: 100%;
 }
 
 
@@ -96,6 +98,7 @@ p {
     top: 0;
     overflow: hidden;
     z-index: 3;
+    border-radius: 5px;
 }
 
 #navigation li {
