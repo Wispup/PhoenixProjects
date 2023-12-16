@@ -82,6 +82,8 @@ p {
     display: block;
     color: brown;
     width: 100%;
+    padding-left: 40%;
+    padding-right: 40%;
 }
 
 
