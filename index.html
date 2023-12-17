@@ -71,7 +71,18 @@
             <article>
                 <p>Published on: <time datetime="2023-12-15"> December 15 2023 </time></p>
                 <p>We managed to implement a music loop as wel some extra aestetics. Even some dabbeling in javascript</p>
+                <img src="\Images/PhoenixProjectState15_12_2023.png" alt="project picture">
             </article>
+            <article>
+                <p>Published on: <time datetime="2023-12-16"> December 16 2023 </time></p>
+                <p>Pulled of some nice penetration testing on a test up rig setting up the framework and building the required databases, great practise.<br> still have a lot to learn but root acces is close!</p>
+            </article>
+            <article>
+                <p>Published on: <time datetime="2023-12-17"> December 17 2023 </time></p>
+                <p>Work on some of the node setups. Was fronted with a great idea to switch API keys through scripts.</p>
+                <p>See projects "APIscript" <span href="#APIscript">APIscript</span></p>
+            </article>
+
 
         </main>
 
@@ -88,6 +99,30 @@
             <article>
                 <h3>First project</h3>
                 <p>Build site/blog</p>
+            </article>
+            <article>
+                <h3 id="APIscript">APIscript</h3>
+                <p>Creating API script</p>
+                <p>#API script<br>
+                    <br>
+                    !/bin/bash<br>
+                    <br>
+                    API_KEY="/root/"node_name"-API/API1"<br>
+                    <br>
+                    echo -n "Starting "node_name"-node with API key..."<br>
+                    "node_name"-node --start < "$API_KEY"<br>
+                    echo ""node_name"-node started"<br>
+                    </p>
+                <p>#setting up crontab to set up a time trigger for scripts</p>
+                <P>#Crontab<br>
+                    <br>
+                    # Run start_myria_node.sh every day at midnight<br>
+                    0 0 * * * /root/"node_name"-API/start_myria_node.sh<br>
+                    <br>
+                    # Run start_myria_node_API2.sh every day at noon<br>
+                    0 12 * * * /root/"node_name"-API/start_myria_node_API2.sh<br>
+                    <br>
+                </P>
             </article>
         </main>
         <footer>
