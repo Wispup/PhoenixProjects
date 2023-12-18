@@ -59,6 +59,14 @@ p {
     
 }
 
+#image_2 {
+    width: 500px;
+    height: 500px;
+    border-radius: 5px;
+    border: 5px solid black;
+}
+
+
 #ButtonAD {
     position: absolute;
     top: 50%; /* Adjust this value to vertically position the button */
