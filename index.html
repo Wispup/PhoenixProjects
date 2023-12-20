@@ -71,7 +71,7 @@
             <article>
                 <p>Published on: <time datetime="2023-12-15"> December 15 2023 </time></p>
                 <p>We managed to implement a music loop as wel some extra aestetics. Even some dabbeling in javascript</p>
-            <img id="#image_2" src="\Images/PhoenixProjectState15_12_2023.png" alt="project picture">
+                <p>See projects "Day1pics" <a href="#Day1pics">Day1pics</a></p>
             </article>
             <article>
                 <p>Published on: <time datetime="2023-12-16"> December 16 2023 </time></p>
@@ -82,6 +82,24 @@
                 <p>Work on some of the node setups. Was fronted with a great idea to switch API keys through scripts.</p>
                 <p>See projects "APIscript" <a href="#APIscript">APIscript</a></p>
             </article>
+            <article>
+                <p>Published on: <time datetime="2023-12-18"> December 18 2023 </time></p>
+                <p>Lots of organising and planning for '24 didn't get to any design developments</p>
+            </article>
+            <article>
+                <p>Published on: <time datetime="2023-12-19"> December 19 2023 </time></p>
+                <p>Made a Bat script to automatically scp file to secure location/server as well as setup internal cafeinate script for the server.</p>
+                <p>See projects "APIscript"<a href='#SendBat'>SendBAT</a></p>
+                <p>Revisiting APIscript i noticed a bug in the triggers of the script. Added a log so i could keep track of the issue</p>
+                <p>Most likely will have to implement a delay to get it working optimaly</p>
+                <p>See projects "APIscript" <a href="#APIscript">APIscript</a></p>
+            </article>
+            <article>
+                <p>Published on: <time datetime="2023-12-20"> December 20 2023 </time></p>
+                <p>Recorded some more loops and samples not sure if they will get uploaded as github.io is a nice baseline but i'm begining to recognise the limits of the page as far as bigger database reliant structures go.</p>
+                <p>Made wireframe designs for javascript implementation in github site next is seeing if this is realistic and/or even possible</p>
+            </article>
+
 
 
         </main>
@@ -101,6 +119,10 @@
                 <p>Build site/blog</p>
             </article>
             <article>
+                <h3 id="Day1pics">First forms</h3>
+                <img id="#image_2" src="\Images/PhoenixProjectState15_12_2023.png" alt="project picture">
+            </article>
+            <article>
                 <h3 id="APIscript">APIscript</h3>
                 <p>Creating API script</p>
                 <p>#API script<br>
@@ -117,12 +139,39 @@
                 <P>#Crontab<br>
                     <br>
                     # Run start_myria_node.sh every day at midnight<br>
-                    0 0 * * * /root/"node_name"-API/start_myria_node.sh<br>
+                    0 0 * * * /root/"node_name"-API/start_myria_node.sh > /root/Myria-API/node.log 2>&1<br>
                     <br>
                     # Run start_myria_node_API2.sh every day at noon<br>
-                    0 12 * * * /root/"node_name"-API/start_myria_node_API2.sh<br>
+                    0 12 * * * /root/"node_name"-API/start_myria_node_API2.sh > /root/Myria-API/node.log 2>&1<br>
                     <br>
                 </P>
+            </article>
+            <article>
+                <h3 id="SendBAT">SendBATscript</h3>
+                <p>Setting up BAT script for ez file transportation</p>
+                <P>#SendBAT script</P>
+                <p>
+                    User<br>
+                    @echo off<br>
+                    setlocal enabledelayedexpansion<br>
+                    <br>
+                    set /p "localFile=Enter the local file path: "<br>
+                    set /p "password=Enter the remote user password: "<br>
+                    set "remoteUser=**"<br>
+                    set "remoteHost="***.***.*.**"<br>
+                    set "remotePath=(file/path at location)"<br>
+                    <br>
+                    echo Copying "!localFile!" to "!remoteUser!@!remoteHost!:!remotePath!"<br>
+                    <br>
+                    "C:\Program Files\PuTTY\pscp.exe" -pw !password! "!localFile!" "!remoteUser!@!remoteHost!:!remotePath!"<br>
+                    <br>
+                    echo Copy completed.<br>
+                    <br>
+                    pause<br>
+                    
+                    ** = user and host data/IP's
+                </p>
+                    
             </article>
         </main>
         <footer>
